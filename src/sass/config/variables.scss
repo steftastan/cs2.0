@@ -1,0 +1,174 @@
+ /** VARIABLES
+  * This Sass file contains imports and variable declarations
+  * for the application's color palette, as well as font declarations
+  * with their specific sizes and weights.
+  */
+
+/**
+ * Font Import
+ * Font source: https://fonts.google.com/selection?selection.family=Montserrat
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+/**
+ * Font size variables
+ */
+$font-size-mobile-content: 9px;
+$font-size-mobile-small: 10px;
+$font-size-mobile-large: 20px;
+
+$font-size-content: 12px;
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
+$font-size-extralarge: 36px;
+
+/**
+ * Font weight variables
+ */
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+/**
+ * Color variables
+ */
+
+/* Basic colors */
+$white: #FFF;
+
+/* Main colors */
+$blue-90: #18273C;
+$blue-70: #2D408F;
+$blue-60: #1F57A4;
+$blue-50: #2D74DA;
+$blue-40: #5392FF;
+$blue-30: #79a6f6;
+$peach-40: #F26322;
+$peach-50: #C45433;
+
+/* Main grayscale */
+$cool-gray-1: #E2EBEB;
+$cool-gray-20: #B8C1C1;
+$cool-gray-40: #8C9696;
+$cool-gray-70: #434747;
+
+/* Accent colors */
+$green-40: #00AA5D;
+$indigo-50: #6C63AC;
+$magenta-50: #DC257F;
+$red-50: #E52527;
+$lime-40: #73a22c;
+$teal-30: #0EB8A0;
+$warmgray-50: #7E7373;
+$purple-50: #A04C9D;
+$orange-30: #F6851F;
+$gray-50: #787678;
+
+/* Darker accent colors */
+$green-60: #116639;
+$indigo-70: #473793;
+$magenta-70: #831b4c;
+$red-70: #83231e;
+$lime-60: #426200;
+$teal-50: #008673;
+$warmgray-70: #4b4545;
+$purple-70: #71237c;
+$orange-50: #ad6418;
+$gray-70: #464646;
+
+
+/* Assigning colors to classes of the same name, as well as their hover version */
+
+.green {
+    background-color: $green-40;
+    color: $green-40;
+}
+
+
+.indigo {
+    background-color: $indigo-50;
+    color: $indigo-50;
+}
+
+.magenta {
+    background-color: $magenta-50;
+    color: $magenta-50;
+}
+
+
+.red {
+    background-color: $red-50;
+    color: $red-50;
+}
+
+.lime {
+    background-color: $lime-40;
+    color: $lime-40;
+}
+
+.teal {
+    background-color: $teal-30;
+    color: $teal-30;
+}
+
+.warmgray {
+    background-color: $warmgray-50;
+    color: $warmgray-50;
+}
+
+.purple {
+    background-color: $purple-50;
+    color: $purple-50;
+}
+
+.orange {
+    background-color: $orange-30;
+    color: $orange-30;
+}
+
+.gray {
+    background-color: $gray-50;
+    color: $gray-50;
+}
+
+.category.green:hover {
+    background-color: $green-60;
+}
+
+.category.indigo:hover {
+    background-color: $indigo-70;
+}
+
+.category.magenta:hover {
+    background-color: $magenta-70;
+}
+
+.category.red:hover {
+    background-color: $red-70;
+}
+
+.category.lime:hover {
+    background-color: $lime-60;
+}
+
+.category.teal:hover {
+    background-color: $teal-50;
+}
+
+.category.warmgray:hover {
+    background-color: $warmgray-70;
+}
+
+.category.purple:hover {
+    background-color: $purple-70;
+}
+
+.category.orange:hover {
+    background-color: $orange-50;
+}
+
+.category.gray:hover {
+    background-color: $gray-70;
+}

@@ -1,0 +1,849 @@
+{
+    "results":[
+        {
+            "name":"Personal Preferences",
+            "code":7,
+            "icon":"client",
+            "color":"teal",
+            "sublinks":[
+                {
+                    "name":"WorkFlow Agent",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV2&app=SIAWebFacing",
+                    "icon":"workspace",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Search PO",
+                    "url":"",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Your surveys",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV81&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Bank Balance",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV30&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Collection",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV20&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Deposits",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV37&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Cashier transactions",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV4&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"AR Aging by rep",
+                    "url":"com.sia.commonsense.arageing.servlets.ArDetailServlet",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Disbursements",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV39&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Query",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV82&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Workflow Agent - GUI",
+                    "url":"com.sia.commonsense.workflow.servlets.WorkFlowServlet",
+                    "icon":"flow",
+                    "color":"teal"
+                }
+            ]
+        },
+        {
+            "name":"Financials",
+            "code":5,
+            "icon":"repository",
+            "color":"green",
+            "sublinks":[
+                {
+                    "name":"General Ledger",
+                    "url":"com.sia.commonsense.gl.servlets.GLServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Accounts Payable",
+                    "url":"commonsense/react/accounts-payable",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Accounts Receivable",
+                    "url":"com.sia.commonsense.arageing.servlets.ARServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Payroll",
+                    "url":"commonsense/react/payroll",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Fixed Assets",
+                    "url":"com.sia.commonsense.fa.servlets.FAServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Inventory",
+                    "url":"com.sia.commonsense.invval.servlets.INVServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Financial Statements",
+                    "url":"com.sia.commonsense.gl.servlets.ReportListServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Inventory Analysis",
+                    "url":"com.sia.commonsense.invval.servlets.InventoryServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"AR Analysis",
+                    "url":"com.sia.commonsense.arageing.servlets.ArageingServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Ratio Analysis",
+                    "url":"com.sia.commonsense.raa.servlets.GeneralLedgerServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"AP Analysis",
+                    "url":"com.sia.commonsense.ap.servlets.AccPayableServlet",
+                    "icon":"flow",
+                    "color":"green"
+                },
+                {
+                    "name":"Contribution Statement",
+                    "url":"com.sia.commonsense.stat.servlets.StatementServlet?task=statement",
+                    "icon":"flow",
+                    "color":"green"
+                }
+            ]
+        },
+        {
+            "name":"Marketing & Sales",
+            "code":3,
+            "icon":"client",
+            "color":"indigo",
+            "sublinks":[
+                {
+                    "name":"Sales Force Automation",
+                    "url":"com.sia.commonsense.ms.servlets.MSServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Campaign Management",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV46&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Order Entry",
+                    "url":"com.sia.commonsense.oe.servlets.OEServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Sales Analysis",
+                    "url":"com.sia.commonsense.rsa.servlets.SalesAnalysisServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Fur Retail",
+                    "url":"com.sia.commonsense.fr.servlets.FRServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Sales/Profitability analysis",
+                    "url":"com.sia.commonsense.gpa.servlets.ProfitAnalysisServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Net Contribution Analysis",
+                    "url":"com.sia.commonsense.nca.servlets.NetContributionAnalysisServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Sales Performance",
+                    "url":"com.sia.commonsense.sp.servlets.SPServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                },
+                {
+                    "name":"Campaign Management",
+                    "url":"com.sia.commonsense.camp.servlets.CampaignServlet",
+                    "icon":"flow",
+                    "color":"indigo"
+                }
+            ]
+        },
+        {
+            "name":"Customer Service",
+            "code":6,
+            "icon":"chat-message",
+            "color":"magenta",
+            "sublinks":[
+                {
+                    "name":"Call (HelpDesk) Center",
+                    "url":"com.sia.commonsense.ca.servlets.CAServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Call Analysis",
+                    "url":"com.sia.commonsense.ca.servlets.CallAnalysisServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Procurement",
+                    "url":"com.sia.commonsense.pu.servlets.PUServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Receiving",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV49&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Project Management",
+                    "url":"com.sia.commonsense.es.servlets.ESServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Shipping",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV62&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Whse & Storage",
+                    "url":"com.sia.commonsense.in.servlets.INServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Transport",
+                    "url":"com.sia.commonsense.tr.servlets.DispatchingServlet?stopView=N",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Point of Sales",
+                    "url":"com.sia.commonsense.pos.servlets.PosAnalysisServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Transman Software",
+                    "url":"",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Fur Storage",
+                    "url":"com.sia.commonsense.fr.servlets.FSServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Fur Retail",
+                    "url":"FurRetail",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Buying groups",
+                    "url":"com.sia.commonsense.bg.servlets.BGRebateSetupServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Rebate Analysis",
+                    "url":"com.sia.commonsense.bg.servlets.BGRebateAnalysisServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Loan Management",
+                    "url":"",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Peritoneal Dialysis",
+                    "url":"com.sia.commonsense.pd.servlets.ActionItemServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Pricing Simulation",
+                    "url":"com.sia.commonsense.ps.servlets.StartPricingSimulationServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Employee Lookup",
+                    "url":"com.sia.commonsense.hr.servlets.DriverInfoServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Card Management",
+                    "url":"com.sia.commonsense.cm.servlets.CardManagementServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Accident Informarion",
+                    "url":"com.sia.commonsense.accident.servlets.AccidentInformationServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Clearing charges",
+                    "url":"com.sia.commonsense.clearing.servlets.ClearingServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Repair Work Order",
+                    "url":"RepairOrderServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Equipment Database",
+                    "url":"UnitServlet",
+                    "icon":"flow",
+                    "color":"magenta"
+                },
+                {
+                    "name":"Preventive Maintenance",
+                    "url":"UnitMaintenance",
+                    "icon":"flow",
+                    "color":"magenta"
+                }
+            ]
+        },
+        {
+            "name":"Business Planning",
+            "code":1,
+            "icon":"flow",
+            "color":"red",
+            "sublinks":[
+                {
+                    "name":"Enterprise Information Codes",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV31&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"red"
+                },
+                {
+                    "name":"Enterprise Human Resources",
+                    "url":"com.sia.commonsense.ssm.servlets.HumanResourcesServlet",
+                    "icon":"flow",
+                    "color":"red"
+                },
+                {
+                    "name":"Enterprise WorkGroup Planning",
+                    "url":"com.sia.commonsense.es.servlets.WPServlet",
+                    "icon":"flow",
+                    "color":"red"
+                },
+                {
+                    "name":"Enterprise Goal & Objectives",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV33&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"red"
+                },
+                {
+                    "name":"Service-Sales & Management",
+                    "url":"com.sia.commonsense.ssm.servlets.ServiceSalesServlet",
+                    "icon":"flow",
+                    "color":"red"
+                },
+                {
+                    "name":"Time Card Management",
+                    "url":"TimeCardServlet",
+                    "icon":"flow",
+                    "color":"red"
+                },
+                {
+                    "name":"Time Card Entry",
+                    "url":"MechanicTimeCardServlet",
+                    "icon":"flow",
+                    "color":"red"
+                },
+                {
+                    "name":"Performance Management",
+                    "url":"PerformanceReportServlet?page=BrandWorkType",
+                    "icon":"flow",
+                    "color":"red"
+                }
+            ]
+        },
+        {
+            "name":" Distribution",
+            "code":10,
+            "icon":"world",
+            "color":"lime",
+            "sublinks":[
+                {
+                    "name":"Customer Orders",
+                    "url":"com.sia.commonsense.oe.servlets.OEServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Orders on Hold",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV14&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Backorders",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV43&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Shipping",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV62&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Inventory",
+                    "url":"com.sia.commonsense.invval.servlets.INVServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Requisitions",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV12&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Purchasing",
+                    "url":"com.sia.commonsense.pu.servlets.PUServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Expediting",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV50&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Receiving",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV49&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Restocking",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV34&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Replenishment/Reorder analysis",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV28&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Demand Forecasting",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV41&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Sales views",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV60&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Product Availability",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV48&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Drop Ship Management",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV35&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Purchasing Analysis",
+                    "url":"com.sia.commonsense.pa.servlets.PurchaseAnalysisServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"RF Management",
+                    "url":"com.sia.commonsense.rf.servlets.RFManagement",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Warehouse",
+                    "url":"com.sia.commonsense.wh.servlets.WareHouseServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Replenishment Analysis",
+                    "url":"com.sia.commonsense.rep.servlets.ReplenishmentServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Remote Whs. Replenishment",
+                    "url":"com.sia.commonsense.rwhr.servlets.RemoteWhsReplenServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                },
+                {
+                    "name":"Warehouse Map",
+                    "url":"com.sia.commonsense.wh.servlets.WHMapServlet",
+                    "icon":"flow",
+                    "color":"lime"
+                }
+            ]
+        },
+        {
+            "name":" Production",
+            "code":11,
+            "icon":"tools",
+            "color":"teal",
+            "sublinks":[
+                {
+                    "name":"Components & Routings",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV1&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"W.O. Invoicing",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV22&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Component Search & Analysis",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV47&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Enterprise WorkGroup Planning",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV38&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Product BackOrders",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV42&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Product Availability",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV48&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Fur W.O. System",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV17&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Enter production by lot#",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV36&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Demand forecasting",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV41&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Bill of Materials",
+                    "url":"com.sia.commonsense.bom.servlets.RequirementServlet",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Production Schedule",
+                    "url":"com.sia.commonsense.bom.servlets.EquipScheduleServlet",
+                    "icon":"flow",
+                    "color":"teal"
+                },
+                {
+                    "name":"Machine status",
+                    "url":"com.sia.commonsense.bom.servlets.MachineStatusServlet",
+                    "icon":"flow",
+                    "color":"teal"
+                }
+            ]
+        },
+        {
+            "name":" Transportation",
+            "code":9,
+            "icon":"traffic",
+            "color":"warmgray",
+            "sublinks":[
+                {
+                    "name":"Public Warehousing",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV29&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Dispatching",
+                    "url":"com.sia.commonsense.tr.servlets.DispatchingServlet?stopView=N",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Dispatch Planning",
+                    "url":"com.sia.commonsense.tr.servlets.DispatchPlanningServlet",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"SIM Messages by department",
+                    "url":"com.sia.commonsense.ssm.servlets.CommunicationSystemServlet?msgType=DEPT&popup=Y",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Pallet Control",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV23&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Repair management",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV80&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"SMA Analysis",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV19&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Invoicing",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV26&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Repair memo",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV11&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"ISO Forms",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV65&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Unit Utilisation",
+                    "url":"com.sia.commonsense.fa.servlets.UnitReportServlet",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Data entry",
+                    "url":"",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Route Sheet validation",
+                    "url":"com.sia.commonsense.tr.servlets.ElectronicRouteSheet?validate=Y",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Address validation",
+                    "url":"com.sia.commonsense.tr.servlets.AddressValidation",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Driver productivity",
+                    "url":"com.sia.commonsense.es.servlets.DriverProductivity",
+                    "icon":"flow",
+                    "color":"warmgray"
+                },
+                {
+                    "name":"Vacation Planning",
+                    "url":"com.sia.commonsense.tr.servlets.VacationPlanningServlet",
+                    "icon":"flow",
+                    "color":"warmgray"
+                }
+            ]
+        },
+        {
+            "name":" Project Services",
+            "code":12,
+            "icon":"workspace",
+            "color":"purple",
+            "sublinks":[
+                {
+                    "name":"Enterprise WorkGroup Planning",
+                    "url":"com.sia.commonsense.es.servlets.WPServlet",
+                    "icon":"flow",
+                    "color":"purple"
+                },
+                {
+                    "name":"W.O. Invoicing",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV22&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"purple"
+                },
+                {
+                    "name":"Service Contracts/Agreements",
+                    "url":"com.sia.commonsense.es.servlets.ESServlet",
+                    "icon":"flow",
+                    "color":"purple"
+                },
+                {
+                    "name":"Receiving",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV49&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"purple"
+                },
+                {
+                    "name":"Expediting",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV50&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"purple"
+                }
+            ]
+        },
+        {
+            "name":"Security",
+            "code":8,
+            "icon":"secure",
+            "color":"orange",
+            "sublinks":[
+                {
+                    "name":"Security Manager",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV64&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"orange"
+                },
+                {
+                    "name":"Company Access Control",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV7&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"orange"
+                },
+                {
+                    "name":"EDI Setup",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV67&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"orange"
+                },
+                {
+                    "name":"Notification call programs",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV3&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"orange"
+                },
+                {
+                    "name":"Content Manager Setup",
+                    "url":"com.sia.commonsense.shared.GatewayServlet?inv=INV55&app=SIAWebFacing",
+                    "icon":"flow",
+                    "color":"orange"
+                },
+                {
+                    "name":"TMT/400 Interface setup",
+                    "url":"",
+                    "icon":"flow",
+                    "color":"orange"
+                },
+                {
+                    "name":"RTC interface setup",
+                    "url":"",
+                    "icon":"flow",
+                    "color":"orange"
+                },
+                {
+                    "name":"myCompany portal management",
+                    "url":"com.sia.commonsense.myPortal.servlets.ManagementServlet",
+                    "icon":"flow",
+                    "color":"orange"
+                }
+            ]
+        },
+        {
+            "name":"RF",
+            "code":13,
+            "icon":"wikis",
+            "color":"gray",
+            "sublinks":[
+
+            ]
+        }
+    ]
+}

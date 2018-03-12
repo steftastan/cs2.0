@@ -1,0 +1,77 @@
+/* ==========================================================================
+   OVERRIDES
+   ========================================================================== */
+
+/**
+ * Last-resort CSS classes to override existing rules go here.
+ * These are last-resort uses, some may not strictly adhere to BEM standards,
+ * because they may rewrite CSS from external sources.
+ *
+ * Since opening and closing the dashboard affects many elements in our DOM,
+ * this file was created to better manage the classes that cause the change.
+ */
+
+/* All devices */
+@include tablet {
+    .header.header--open {
+        left: 200px;
+        -webkit-transition: left 0.3s ease-in;
+        -moz-transition: left 0.3s ease-in;
+        -o-transition: left 0.3s ease-in;
+        -ms-transition: left 0.3s ease-in;
+        transition: left 0.3s ease-in;
+    }
+
+    .breadcrumbs.breadcrumbs--open {
+        left: 200px;
+        width: calc(100% - 200px);
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+
+    .wrapper__content.contentWrapper--open {
+        width: calc(100% - 200px);
+        min-width: calc(100% - 200px);
+        left: 200px;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+}
+
+@include desktop {
+    .header.header--open {
+        left: 225px;
+        -webkit-transition: left 0.3s ease-in;
+        -moz-transition: left 0.3s ease-in;
+        -o-transition: left 0.3s ease-in;
+        -ms-transition: left 0.3s ease-in;
+        transition: left 0.3s ease-in;
+    }
+
+    .breadcrumbs.breadcrumbs--open {
+        left: 225px;
+        width: calc(100% - 225px);
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+
+    .wrapper__content.contentWrapper--open {
+        width: calc(100% - 225px);
+        min-width: calc(100% - 225px);
+        left: 225px;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+}

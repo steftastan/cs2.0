@@ -1,0 +1,55 @@
+/** App.scss
+ * The application's CSS is all split into parts by configuration and module
+ * using BEM as our guide to structure our CSS.
+ *
+ * Config contains globally-used information such as fonts, colors, or media
+ * query declarations. Anything with little-to-no specificity.
+ *
+ * Modules contains the specific blocks that make up the code. To facilitate the
+ * project's scalability scalable, create a new file for every
+ * new module that needs to be added.
+
+ * Use BEM naming convention for all elements: blocks, elements, modifiers.
+ * More information on BEM here: http://getbem.com
+ *
+ * Use Nicolas Gallagher's Idiomatic CSS for consistent CSS guidelines on
+ * property declarations, commented code, etc.
+ * https://github.com/necolas/idiomatic-css
+ *
+ * Comment structure standard is JSDoc. Refer to the website for more guidelines
+ * on how to properly comment code. http://usejsdoc.org/
+ *
+ */
+
+/* Config */
+@import '../css-libraries/bootstrap/bootstrap.css';
+@import '../css-libraries/font-awesome/css/font-awesome.css';
+@import 'config/variables.scss';
+@import 'config/reset.scss';
+@import 'config/fonts.scss';
+@import 'config/mediaqueries.scss';
+@import 'config/grids.scss';
+@import 'config/wrappers.scss';
+@import 'config/icons.scss';
+@import '../css-libraries/bootstrap-table/react-bootstrap-table.scss';
+
+/* Modules */
+@import 'modules/header.scss';
+@import 'modules/breadcrumbs.scss';
+@import 'modules/rightnav.scss';
+@import 'modules/leftnav.scss';
+@import 'modules/filter.scss';
+@import 'modules/categories.scss';
+@import 'modules/tags.scss';
+@import 'modules/forms.scss';
+@import 'modules/data-table.scss';
+@import 'modules/widget.scss';
+@import 'modules/toolbox.scss';
+@import 'modules/sliding-toolbox.scss';
+@import 'modules/data-chart.scss';
+@import 'modules/login.scss';
+@import 'modules/spinner.scss';
+
+/* Helpers */
+@import 'helpers/overrides.scss';
+@import 'helpers/sliding-leftnav.scss';

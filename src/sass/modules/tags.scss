@@ -1,0 +1,61 @@
+/* ==========================================================================
+   TAGS
+   ========================================================================== */
+
+/**
+ * The tags used to further refine search results and to sort lists.
+ */
+
+ /* All devices */
+ .tag {
+     display: inline-block;
+     border-radius: 15px;
+     padding: 8px;
+     color: $white;
+     cursor: pointer;
+ }
+
+ .tag + .tag {
+     margin: 0 0 0 5px;
+ }
+
+ .tag--text {
+     margin: 0 5px 0 0;
+ }
+
+ .tag--inactive {
+     background-color: $cool-gray-40;
+ }
+
+ .tag--inactive:hover {
+     background-color: $cool-gray-20;
+ }
+
+ .tag--active {
+     background-color: $peach-40;
+ }
+
+ .tag--active:hover {
+     background-color: $peach-50;
+ }
+
+ /* Mobile-specific styles */
+ @include mobile {
+
+ }
+
+ /* Tablet-specific styles */
+ @include tablet {
+     .tag {
+         font-size: $font-size-mobile-small;
+     }
+
+     .tag--text {
+         font-size: $font-size-mobile-small;
+     }
+ }
+
+ /* Desktop-specific styles */
+ @include desktop {
+
+ }

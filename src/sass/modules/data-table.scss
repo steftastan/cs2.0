@@ -1,0 +1,76 @@
+
+/* ==========================================================================
+   DATA TABLE
+   ========================================================================== */
+
+/**
+ * Large tables that contain all the datasets returned per section.
+ */
+
+/* All devices */
+.dataTable__row--content {
+    width: 100%;
+    border-bottom: 1px solid $cool-gray-1;
+    cursor: pointer;
+}
+
+.dataTable__row--content:hover {
+    background-color: $cool-gray-1;
+}
+
+.dataTable__row--header {
+    text-transform: uppercase;
+    background-color: $blue-90;
+    @include font($font-size-content, $font-weight-bold, $white);
+}
+
+.dataTable__pagination {
+    text-align: center;
+}
+
+.dataTable__title {
+    @include font($font-size-small, $font-weight-bold, $blue-60);
+    margin-bottom: 5px;
+}
+
+/*
+ * .dataTable--fullWidth class is also available for tables that span the entire width of screen
+ * in this case we are only modifying the font-size for smaller tables
+ */
+.dataTable--halfWidth {
+    font-size: $font-size-mobile-small;
+}
+
+/* Mobile-specific styles */
+@include mobile {
+    .dataTable__row--content {
+        padding: 5px 0;
+    }
+
+    .dataTable__row--header {
+        padding: 0;
+        font-size: 11px;
+    }
+}
+
+/* Tablet-specific styles */
+@include tablet {
+    .dataTable__row--content {
+        padding: 15px 0;
+    }
+
+    .dataTable__row--header {
+        padding: 0 0 15px 0;
+        font-size: 11px;
+    }
+
+    .dataTable__title {
+        @include font($font-size-medium, $font-weight-bold, $blue-60);
+    }
+
+}
+
+/* Desktop-specific styles */
+@include desktop {
+
+}

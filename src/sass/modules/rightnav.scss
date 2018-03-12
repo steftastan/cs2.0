@@ -1,0 +1,145 @@
+/* ==========================================================================
+   RIGHT NAV
+   ========================================================================== */
+
+/**
+ * This navigation behaves differently in that it is visible on the right side
+ * of the browser on desktop view, but on mobile it becomes accesible inside
+ * the leftnav menu.
+ */
+
+ .rightnav {
+     position: absolute;
+     right: 0;
+     width: 155px;
+     padding: 9px 5px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     height: 100%;
+     background-color: $white;
+ }
+
+ .rightnav__logout {
+     display: inline-block;
+     overflow: hidden;
+     width: auto;
+     height: 25px;
+     padding: 6px 5px;
+     margin: 0 0 0 10px;
+     color: $cool-gray-70;
+     font-size: $font-size-content;
+     text-decoration: none;
+ }
+
+ .rightnav__lang--active {
+     display: inline-block;
+     color: $blue-70;
+ }
+
+ .rightnav__lang {
+     padding: 6px 5px;
+ }
+
+ .rightnav__langSelect {
+     display: inline-block;
+     overflow: hidden;
+     width: 55px;
+     height: 25px;
+     margin: 0 10px 10px;
+     border-radius: 15px;
+     background-color: $cool-gray-1;
+     @include font($font-size-content, $font-weight-regular, $cool-gray-40);
+     -webkit-transition: width 0.2s ease-in;
+     -moz-transition: width 0.2s ease-in;
+     -o-transition: width 0.2s ease-in;
+     -ms-transition: width 0.2s ease-in;
+     transition: width 0.2s ease-in;
+ }
+
+/* Mobile-specific styles */
+@include mobile {
+
+    .rightnav--mobileHidden {
+        display: none;
+    }
+
+    .rightnav__lang {
+        display: inline-block;
+    }
+
+}
+
+/* Desktop-specific styles */
+@include tablet {
+
+    .rightnav {
+        padding: 8px 5px;
+    }
+
+    .rightnav__logout {
+        margin-left: 0;
+        height: 28px;
+        padding: 0;
+    }
+
+    .rightnav__lang {
+        display: inline-block;
+    }
+
+    .rightnav__langSelect {
+        width: 55px;
+    }
+}
+
+/* Desktop-specific styles */
+@include desktop {
+
+    .rightnav__logout {
+        @include font($font-size-content, $font-weight-regular, $cool-gray-40);
+        text-decoration: none;
+    }
+
+    .rightnav__container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .rightnav__lang {
+        cursor: pointer;
+        display: none;
+    }
+
+    .rightnav__langSelect {
+        display: inline-block;
+        overflow: hidden;
+        width: 28px;
+        height: 25px;
+        border-radius: 15px;
+        background-color: $cool-gray-1;
+        @include font($font-size-content, $font-weight-regular, $cool-gray-20);
+        -webkit-transition: width 0.2s ease-in;
+        -moz-transition: width 0.2s ease-in;
+        -o-transition: width 0.2s ease-in;
+        -ms-transition: width 0.2s ease-in;
+        transition: width 0.2s ease-in;
+    }
+
+    .rightnav__langSelect--open {
+        width: 55px;
+        -webkit-transition: width 0.2s ease-in;
+        -moz-transition: width 0.2s ease-in;
+        -o-transition: width 0.2s ease-in;
+        -ms-transition: width 0.2s ease-in;
+        transition: width 0.2s ease-in;
+    }
+
+    .rightnav__lang--open {
+        display: inline-block;
+    }
+
+    .rightnav {
+        width: 220px;
+        padding: 8px 5px;
+    }
+}

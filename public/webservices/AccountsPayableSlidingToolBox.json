@@ -1,0 +1,27 @@
+{
+    "results" : [{
+        "title" : "Vouchers",
+        "url": "http://google.com",
+        "isPopUp" : false
+    }, {
+        "title" : "Debit Notes",
+        "url": "http://google.com",
+        "isPopUp" : true
+    }, {
+        "title" : "Cash Notes",
+        "url": "http://google.com",
+        "isPopUp" : false
+    }, {
+        "title" : "Manual Cheques",
+        "url": "http://google.com",
+        "isPopUp" : false
+    }, {
+        "title" : "Future Vouchers",
+        "url": "http://google.com",
+        "isPopUp" : true
+    }, {
+        "title" : "Periodic Vouchers",
+        "url": "http://google.com",
+        "isPopUp" : true
+    }]
+}

@@ -1,0 +1,109 @@
+
+/* ==========================================================================
+   DATA TABLE
+   ========================================================================== */
+
+/**
+ * Large tables that contain all the datasets returned per section.
+ */
+
+/* All devices */
+
+.login__title {
+    @include font($font-size-small, $font-weight-bold, $blue-60);
+    margin-bottom: 25px;
+}
+
+.login__input {
+    outline: 0;
+    width: 100%;
+    margin: 5px 0;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: $cool-gray-1;
+    color: $blue-50;
+    @include font($font-size-content, $font-weight-regular, $blue-60);
+}
+
+.login__submit {
+    width: 100%;
+    margin: 30px 0 0;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: $peach-40;
+    text-transform: uppercase;
+    @include font($font-size-small, $font-weight-bold, $white);
+}
+
+.login__submit--pw {
+    margin: 30px 0;
+}
+
+.login__input[value=''],
+.login__input::-webkit-input-placeholder,
+.login__input::-webkit-input-placeholder {
+  color: $blue-50;
+  font-style: italic;
+}
+
+.login__remember--checkbox {
+    margin: 5px 5px 0 0;
+}
+
+.login__rememberMe {
+    display: block;
+    margin: 15px 0;
+    text-transform: uppercase;
+    @include font($font-size-content, $font-weight-bold, $cool-gray-40);
+}
+
+.login__pwChange {
+    display: block;
+    font-style: italic;
+    text-align: right;
+    @include font($font-size-content, $font-weight-regular, $cool-gray-40);
+}
+
+.login__pwChange--margin {
+    margin: 15px 0;
+}
+
+
+
+/* Mobile-specific styles */
+@include mobile {
+
+}
+
+/* Tablet-specific styles */
+@include desktop {
+
+    .login__title {
+        @include font($font-size-large, $font-weight-bold, $blue-60);
+    }
+
+    .login__input {
+        outline: 0;
+        width: 100%;
+        margin: 5px 0;
+        border: 0;
+        border-radius: 40px;
+        padding: 20px;
+        background-color: $cool-gray-1;
+        color: $blue-50;
+        @include font($font-size-medium, $font-weight-regular, $blue-60);
+    }
+
+    .login__submit {
+        width: 100%;
+        margin: 20px 0 0;
+        border: none;
+        border-radius: 5px;
+        padding: 30px;
+        background-color: $peach-40;
+        text-transform: uppercase;
+        @include font($font-size-large, $font-weight-regular, $white);
+    }
+}

@@ -1,0 +1,77 @@
+/* ==========================================================================
+   BREADCRUMBS
+   ========================================================================== */
+
+/**
+ * Breadcrumbs located underneath the header.
+ */
+
+/* All devices */
+.breadcrumbs {
+    position:fixed;
+    z-index: 9997;
+    width: 100%;
+    height: 45px;
+    background-color: $cool-gray-70;
+}
+
+.breadcrumbs__link {
+    line-height: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    @include font($font-size-content, $font-weight-regular, $white);
+}
+
+.breadcrumbs__link:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+.breadcrumbs__caret {
+    margin-right: 10px;
+}
+
+.breadcrumbs__arrow {
+    padding: 5px;
+    font-size: $font-size-mobile-content;
+    color: $white;
+}
+
+/* Mobile-specific styles */
+@include mobile {
+    .breadcrumbs {
+        top: 50px;
+    }
+
+    .breadcrumbs__trail {
+        margin: 0 0 0 10px;
+        width: 75%;
+        height: 45px;
+        overflow: hidden;
+    }
+}
+
+/* Tablet-specific styles */
+@include tablet {
+    .breadcrumbs {
+        top: 65px;
+        left: 0;
+        height: 40px;
+        width: 100%;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+
+    .breadcrumbs__trail {
+        left: -40px;
+        margin: 0;
+    }
+}
+
+/* Desktop-specific styles */
+@include desktop {
+
+}

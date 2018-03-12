@@ -1,0 +1,35 @@
+{
+  "name": "commonsensev2.0",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://locahost:9080/commonsense/react",
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "jquery": "^3.2.1",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.1",
+    "popper.js": "^1.12.9",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-bootstrap-table": "^4.3.0",
+    "react-chartjs2": "^1.2.0",
+    "react-dom": "^16.2.0",
+    "react-localize-redux": "^2.13.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/sass/App.scss -o src/css/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/sass/App.scss -o src/css/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build && robocopy build \"C:/Users/etastan/IBM/rationalsdp/workspace/commonsense/Web Content/react\" /e",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "bootstrap-toggle": "^2.2.2",
+    "datatables.net": "^1.10.16"
+  }
+}

@@ -1,0 +1,140 @@
+/* ==========================================================================
+   CATEGORIES
+   ========================================================================== */
+
+/**
+ * The grid or card list of all categories on the main page.
+ */
+
+/* All devices */
+.category {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border-radius: 5px;
+}
+
+.category__icon {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 40px;
+}
+
+.category__text {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.category__name {
+    font-size: $font-size-mobile-small;
+}
+
+.category__link {
+    font-size: $font-size-medium;
+}
+
+/* Mobile-specific styles */
+@include mobile {
+    .category {
+        padding: 20px;
+        color: $white;
+    }
+
+    .category:hover {
+        color: $white;
+    }
+
+    .category__icon--desktop {
+        display: none;
+    }
+
+    .category__item {
+        margin: 0 0 10px 0;
+    }
+}
+
+/* Tablet-specific styles */
+@include tablet {
+    .category {
+        padding: 20px;
+        background-color: $white;
+        cursor: pointer;
+    }
+
+    .category:hover,
+    .category:hover .category__link {
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all  0.2s ease-in;
+        -o-transition: all  0.2s ease-in;
+        transition: all  0.2 ease-in;
+        color: $white;
+    }
+
+    .category__icon {
+        display: none;
+    }
+
+    .category__item {
+        margin: 0 0 15px 0;
+    }
+
+    .category__icon--desktop {
+        vertical-align: middle;
+        display: inline-block;
+        border-radius: 40px;
+        padding: 10px;
+        font-size: $font-size-large;
+        color: $white;
+    }
+
+    .category__icon--desktop:hover {
+        color: $white;
+    }
+
+    .category__name {
+        font-size: $font-size-content;
+        font-weight: $font-weight-medium;
+    }
+
+    .category__link {
+        font-size: $font-size-medium;
+        color: $cool-gray-70;
+    }
+}
+
+/* Desktop-specific styles */
+@include desktop {
+    .category {
+        padding: 30px 20px;
+    }
+
+
+    .category__text {
+        width: 60%;
+    }
+
+    .category__item {
+        display: inline-block;
+        float: none;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .category__icon--desktop {
+        padding: 15px;
+        font-size: 40px;
+        color: $white;
+    }
+
+    .category__name {
+        font-size: $font-size-content;
+    }
+
+    .category__link {
+        font-size: $font-size-medium;
+    }
+
+}

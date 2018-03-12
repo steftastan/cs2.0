@@ -1,0 +1,38 @@
+/* ==========================================================================
+   GRIDS
+   ========================================================================== */
+
+/**
+ * Describes the styling for arranging the site's elements in a grid-like fashion.
+ */
+
+/* All devices */
+.grid__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.grid__item--header + .grid__item--header {
+    @include mobile {
+        margin: 0 0 0 10px;
+    }
+
+    @include tablet {
+        top: -2px;
+        margin: 0 0 0 15px;
+    }
+
+    @include desktop {
+
+    }
+}
+
+.grid__item--header {
+    @include tablet {
+        margin: 0 0 0 15px;
+    }
+}

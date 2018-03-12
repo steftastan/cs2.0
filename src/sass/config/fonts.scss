@@ -1,0 +1,27 @@
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+
+/**
+ * CSS rules and mixins to apply different font styles accross the application.
+ */
+
+/* All devices */
+
+body {
+    font-family: 'Montserrat';
+    font-weight: #{$font-weight-regular};
+}
+
+/**
+ * Mixin to apply custom styling to a font. Best used on elements or modifiers.
+ *
+ * @param $font-size: The desired font-size
+ * @param $font-weight: The desired font-weight
+ * @param $font-color: The desired font-color
+ */
+@mixin font($font-size, $font-weight, $font-color) {
+    color: #{$font-color};
+    font-size: #{$font-size};
+    font-weight: #{$font-weight};
+}

@@ -1,0 +1,166 @@
+/* ==========================================================================
+   OVERRIDES
+   ========================================================================== */
+
+/**
+ * Last-resort CSS classes to override existing rules go here.
+ * These are last-resort uses, some may not strictly adhere to BEM standards,
+ * because they may rewrite CSS from external sources.
+ *
+ * If you need to create an override, please include documentation stating its purpose.
+ */
+
+/* All devices */
+
+/* Overriding pagination styles, removing the .row negative margins */
+.react-bs-table-pagination > .row {
+    margin: 0;
+}
+
+/* Overriding bootstrap .show class, the default value block currently breaks our layout */
+.show {
+  display: inline-block !important;
+}
+
+/* Overriding the pagination widget for mobile, making it into two rows instead of two columns */
+.col-md-6.col-xs-6.col-sm-6.col-lg-6 {
+    width: 100%;
+}
+
+.col-md-6.col-xs-6.col-sm-6.col-lg-6:nth-of-type {
+    text-align: center;
+}
+
+/* Overriding pagination links in order to match elements to the design */
+.pagination > li:first-child > a {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.pagination > li:last-child > a {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.pagination > li > a {
+    border: none;
+    padding: 8px 15px;
+    background-color: $cool-gray-1;
+    @include font($font-size-content, $font-weight-bold, $cool-gray-70);
+}
+
+.pagination > li > a:hover {
+    @include desktop {
+        background-color: $blue-70;
+        color: $peach-40;
+    }
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+    border-color: $blue-90;
+    background-color: $blue-90;
+    color: $peach-40;
+}
+
+/* Original file: react-bootstrap-table.scss */
+/* Overriding the styles for the dropdown menu */
+.dropdown-toggle {
+    background-color: $blue-60;
+    display: inline-block;
+    width: 55px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    color: #FFF;
+    cursor: pointer;
+    @include font($font-size-content, $font-weight-regular, $white);
+}
+
+/* Original file: react-bootstrap-table.scss */
+/*Size per page dropdown pop-up */
+.react-bs-table-sizePerPage-dropdown .dropdown-menu {
+    margin: 5px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 15px;
+    padding: 0;
+    background-color: $blue-60;
+}
+
+/* Original file: react-bootstrap-table.scss */
+/* Contents of the dropdown's pop-up */
+.react-bs-table-sizePerPage-dropdown .dropdown-menu > li > a {
+    padding: 10px 18px;
+    @include font($font-size-content, $font-weight-regular, $white);
+}
+
+.react-bs-table-sizePerPage-dropdown .dropdown-menu > li > a:hover,
+.react-bs-table-sizePerPage-dropdown .dropdown-menu > li > a:focus {
+    background-color: $blue-50;
+}
+
+/* Original file: react-bootstrap-table.scss */
+/* Overriding the data table's borders, original styles on BootStrap*/
+.react-bs-table .table-bordered > thead > tr > th,
+.react-bs-table .table-bordered > tbody > tr > th,
+.react-bs-table .table-bordered > tfoot > tr > th,
+.react-bs-table .table-bordered > thead > tr > td,
+.react-bs-table .table-bordered > tbody > tr > td,
+.react-bs-table .table-bordered > tfoot > tr > td {
+    border: none !important
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $cool-gray-1;
+}
+
+.table-striped > tbody > tr:hover {
+    background-color: $blue-50;
+    color: $white;
+}
+
+/* Original file: react-bootstrap-table.scss */
+/* Overriding the vertical alignment of Table Head elements, depending
+ * depending whether it is a fullWidth table or halfWidth */
+ .dataTable--fullWidth .react-bs-table .react-bs-container-header > table > thead > tr > th,
+ .dataTable--fullWidth .react-bs-table .react-bs-container-footer > table > thead > tr > th {
+     vertical-align: top;
+ }
+
+.dataTable--halfWidth .react-bs-table .react-bs-container-header > table > thead > tr > th,
+.dataTable--halfWidth .react-bs-table .react-bs-container-footer > table > thead > tr > th {
+    vertical-align: middle;
+}
+
+.react-bs-table .react-bs-container-header > table > thead > tr > th .filter {
+    outline: 0;
+    width: 100%;
+    border: 0;
+    border-radius: 15px;
+    background-color: #e2ebeb;
+    padding: 6px 8px;
+    color: $blue-50;
+}
+
+/* Original file: widgets/toolbox.js, toolbox.scss and bootstrap default CSS */
+/* Overriding drop down menu default styles that are bootstrapped to the class */
+.toolBox__group.dropdown-menu {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: $blue-60;
+}
+
+.dropdown-menu > li > a.toolBox__link:hover {
+    background-color: $blue-50;
+}
+
+.dropdown-menu > li > a.toolBox__link {
+    padding: 15px 20px;
+    text-align: left;
+    color: $white;
+}

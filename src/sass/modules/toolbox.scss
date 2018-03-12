@@ -1,0 +1,265 @@
+/* ==========================================================================
+   TOOLBOX
+   ========================================================================== */
+
+/**
+ * The multi-level dropdown toolbox
+ */
+
+/* All devices */
+.toolBox__link {
+    color: $white;
+    font-size: $font-size-content;
+}
+
+/* Mobile */
+@include mobile {
+    .toolBox--mobileHidden,
+    .toolBoxHolder {
+        display: none;
+    }
+
+
+    .toolBox {
+        position: absolute;
+        top: 45px;
+        right: 0;
+        width: 100%;
+    }
+
+    .toolBox__caret {
+        color: $peach-40;
+        padding-right: 10px;
+        font-size: 25px;
+    }
+
+    .toolBox__caret,
+    .toolBox__backLink {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .toolBox__wrapper.toolBox__wrapper--toggle {
+        left: 0;
+    }
+
+    .toolBox__wrapper {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        -webkit-transition: left 0.5s ease-out;
+        -moz-transition: left 0.5s ease-out;
+        -o-transition: left 0.5s ease-out;
+        transition: left 0.5 ease-out;
+    }
+
+    .toolBox__item.toolBox__back {
+        padding: 10px 20px 11px;
+    }
+
+    .toolBox__item {
+        padding: 15px 20px;
+        border-bottom: 1px solid $blue-50;
+        background-color: $blue-60;
+    }
+
+    .toolBox__group {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        -webkit-transition: left 0.5s ease-out;
+        -moz-transition: left 0.5s ease-out;
+        -o-transition: left 0.5s ease-out;
+        transition: left 0.5s ease-out;
+    }
+
+    /** These nested CSS class represent the nested navigation levels in the tool box.
+     * A new level of depth has to be added for each sub link group in the navigation,
+     * mainly to keep them off the screen and not break our navigation.
+     */
+     .toolBox__group .toolBox__group,
+     .toolBox__group .toolBox__group .toolBox__group,
+     .toolBox__group .toolBox__group .toolBox__group .toolBox__group {
+         left: 100%;
+         visibility: hidden;
+     }
+
+    /** Inactive items slide out of the window
+     * This is currently set to support 5 levels of depth of navigation, if more levels
+     * of depth need to be added, just add another line with another nested
+     * .toolBox__group in it.
+     */
+    .toolBox__group.active { left: 0; }
+    .toolBox__group .toolBox__group.active,
+    .toolBox__group .toolBox__group .toolBox__group.active,
+    .toolBox__group .toolBox__group .toolBox__group .toolBox__group.active {
+        left: 100%;
+        visibility: visible;
+    }
+
+    /**
+     * Active items slide into the window
+     * This is currently set to support 5 levels of depth of navigation, if more levels
+     * of depth need to be added, just add another line with another nested
+     * .toolBox__group in it.
+     */
+    .toolBox__group.inactive { left: -100%; }
+    .toolBox__group .toolBox__group.inactive,
+    .toolBox__group .toolBox__group .toolBox__group.inactive,
+    .toolBox__group .toolBox__group .toolBox__group .toolBox__group.inactive { left: 0; }
+}
+
+@include tablet {
+
+    .toolBoxHolder {
+        position: absolute;
+        right: 220px;
+        min-width: 45%;
+        top: 0;
+        height: 40px;
+    }
+    .toolBox__wrapper {
+        width: 100%;
+    }
+
+    .toolBox {
+        display: block;
+        position: relative;
+        left: 0;
+        width: auto;
+        background-color: $blue-60;
+        vertical-align: middle;
+    }
+
+    .toolBox__item.toolBox__back {
+        display: none;
+    }
+
+    .toolBox__group.toolBox__barDesktop {
+        width: 100%;
+        left: 0;
+    }
+
+    .toolBox__group {
+        position: relative;
+        right: 0;
+        width: auto;
+        height: 40px;
+        overflow: visible;
+    }
+
+    .toolBox__item {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+    }
+
+    .toolBox__item,
+    .toolBox__link {
+        width: 125px;
+    }
+
+     .toolBox__item.dropdown-submenu,
+     .toolBox__item.dropdown {
+         width: 200px;
+     }
+
+    .toolBox__link {
+        display: block;
+        padding: 0;
+        background-color: $blue-60;
+        line-height: 40px;
+        text-align: center;
+        @include font($font-size-mobile-small, $font-weight-regular, $white);
+    }
+
+    .toolBox__link:hover {
+        background-color: $blue-50;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .toolBox__link:visited {
+        text-decoration: none;
+        color: $white;
+    }
+
+    .toolBox__link--child {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        line-height: $font-size-medium;
+        text-align: left;
+        color: $white;
+    }
+
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu>a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover>a:after {
+        border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+    .dropdown-submenu.pull-left>.dropdown-menu {
+        left: -100%;
+        margin-left: 10px;
+        -webkit-border-radius: 6px 0 6px 6px;
+        -moz-border-radius: 6px 0 6px 6px;
+        border-radius: 6px 0 6px 6px;
+    }
+
+}
+
+@include desktop {
+
+    .toolBox__link {
+        @include font($font-size-content, $font-weight-regular, $white);
+    }
+
+    .toolBox__link--child {
+        padding: 20px 30px;
+    }
+
+
+}

@@ -1,0 +1,69 @@
+
+/* ==========================================================================
+   NAV WIDGET
+   ========================================================================== */
+
+/**
+ * Navigational Widget available on inner pages such as Accounts Payable,
+ * Accounts Receivable, etc, these are the boxes of links on the right inside
+ * of these pages.
+ */
+
+/* All devices */
+.widget {
+    margin: 15px 0 0 0;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.widget__toolContent {
+    padding: 15px 10px;
+    @include font($font-size-content, $font-weight-regular, $white);
+}
+
+.widget__toolItem.widget__toolItem--open {
+    display: block;
+}
+
+.widget__toolItem {
+    display: none;
+    background-color: $blue-70;
+    border-bottom: 1px solid $blue-60;
+    @include font($font-size-content, $font-weight-regular, $white);
+}
+
+.widget__toolItem .widget__toolItem {
+    background-color: $blue-60;
+    border: none;
+}
+
+.widget__toolItem .widget__toolItem .widget__toolItem {
+    background-color: $blue-50;
+    border: none;
+}
+
+.widget__toolItem .widget__toolItem .widget__toolItem .widget__toolItem {
+    background-color: $blue-40;
+    border: none;
+}
+
+
+.widget__toolSubMenu {
+    padding: 15px 10px;
+}
+
+/* Mobile-specific styles */
+@include mobile {
+
+}
+
+/* Tablet-specific styles */
+@include tablet {
+
+}
+
+/* Desktop-specific styles */
+@include desktop {
+
+}

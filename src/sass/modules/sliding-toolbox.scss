@@ -1,0 +1,127 @@
+/* ==========================================================================
+   SLIDING TOOLBOX
+   ========================================================================== */
+
+/**
+ * A floating widget with additional navigation options.
+ */
+
+/* All devices */
+
+.slidingToolBox__button {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: $blue-50;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all  0.3s ease-in;
+    -o-transition: all  0.3s ease-in;
+    transition: all  0.3 ease-in;
+    cursor: pointer;
+}
+
+.slidingToolBox__button:active,
+.slidingToolBox__button:hover  {
+    background-color: $blue-40;
+}
+
+.slidingToolBox__icon {
+    padding: 10px 0 0 12px;
+    font-size: $font-size-large;
+    color: $white;
+}
+
+.slidingToolBox__links {
+    position: relative;
+    right: -271px;
+    z-index: 9999;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: $blue-50;
+    -webkit-transition: right 0.3s ease-in;
+    -moz-transition: right  0.3s ease-in;
+    -o-transition: right  0.3s ease-in;
+    transition: right  0.3 ease-in;
+}
+
+.slidingToolBox__item {
+    display: block;
+    width: 250px;
+    padding: 15px 20px;
+    font-size: $font-size-content;
+    color: $white;
+    border-bottom: 1px solid $blue-40;
+    -webkit-transition: right 0.3s ease-in;
+    -moz-transition: right  0.3s ease-in;
+    -o-transition: right  0.3s ease-in;
+    transition: right  0.3 ease-in;
+}
+
+.slidingToolBox__item:hover {
+    background-color: $blue-40;
+    color: $white;
+    text-decoration: none;
+}
+
+.slidingToolBox__links--active {
+    right: 0;
+}
+
+
+/* Mobile-specific styles */
+@include mobile {
+    .slidingToolBox {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 9999;
+    }
+}
+
+/* Tablet-specific styles */
+@include tablet {
+
+    .slidingToolBox__button {
+        display: block;
+        position: fixed;
+        top: 105px;
+        right: 0;
+        width: 45px;
+        height: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 0;
+    }
+
+    .slidingToolBox__icon {
+        padding: 7px 0 0 15px;
+        font-size: 15px;
+        color: $white;
+    }
+
+    .slidingToolBox__links {
+        position: fixed;
+        top: 105px;
+        right: -271px;
+    }
+
+    .slidingToolBox__links.slidingToolBox__links--active {
+        right: 0;
+    }
+
+}
+
+/* Desktop-specific styles */
+@include desktop {
+    .slidingToolBox__button:hover {
+        width: 75px;
+        background-color: $blue-40;
+    }
+}

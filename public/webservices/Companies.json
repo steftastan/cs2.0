@@ -1,0 +1,15 @@
+{   "employeeName":"ETASTAN",
+    "results": [{
+            "name":"BIRGER",
+            "default":false
+        }, {
+            "name":"BOW",
+            "default":true,
+            "icon" : "images/apple.png"
+        }, {
+            "default":false,
+            "icon" : "images/Adidas_Logo.png"
+        }, {
+
+            "default":false
+        },{"name":"C115129"},{"name":"C119327","default":false},{"name":"C2761181","default":false},{"name":"C4078209","default":false},{"name":"DASCO","default":false},{"name":"DISTRIBU","default":false},{"name":"D102221","default":false},{"name":"INNOVA","default":false},{"name":"LEMIEUX","default":false},{"name":"MANUFACT","default":false},{"name":"MILANO","default":false},{"name":"NEWMONT","default":false},{"name":"PRDESJ","default":false},{"name":"PREMONT","default":false},{"name":"SCHENKER","default":false},{"name":"SERVICE","default":false},{"name":"SIA_PGMR","default":false},{"name":"TRISPEC","default":false},{"name":"VILLATEC","default":false},{"name":"VINTAGE","default":false},{"name":"VISIONMX","default":false}]}

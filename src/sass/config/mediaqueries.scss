@@ -1,0 +1,31 @@
+/** MEDIA QUERIES
+ * This Sass file contains media query mixins for mobile, tablet landscape
+ * and desktop breakpoints.
+ */
+
+/** MEDIA QUERY BREAKPOINTS */
+$tablet-width: 767px;
+$desktop-width: 1024px;
+
+/** Media Query mixins */
+
+/* Mobile only */
+@mixin mobile() {
+  @media only screen and (max-device-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+/* Tablet & desktop */
+@mixin tablet() {
+    @media only screen and (min-device-width: $tablet-width) {
+    @content;
+  }
+}
+
+/* Desktop only */
+@mixin desktop() {
+  @media only screen and (min-device-width: #{$desktop-width}+1) {
+    @content;
+  }
+}

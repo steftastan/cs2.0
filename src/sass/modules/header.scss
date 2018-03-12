@@ -1,0 +1,91 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+/**
+ * Header containing the SIA and common sense logo.
+ */
+
+/* All devices */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 99999;
+  width: 100%;
+  background: $blue-70;
+}
+
+.header__logo {
+  color:  $white;
+  height: 100%;
+  font-size: 40px;
+}
+
+.header__logo--img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+}
+
+
+.header__mainTitle {
+    @include font($font-size-mobile-large, $font-weight-bold, $white);
+}
+
+.header__subTitle {
+    @include font($font-size-mobile-small, $font-weight-regular, $white);
+}
+
+/* Mobile-specific styles */
+@include mobile {
+   .header {
+       height: 50px;
+       padding: 0 15px;
+     }
+
+   .header__logo {
+     width: 50px;
+     font-size: 50px;
+   }
+}
+
+/* Tablet-specific styles */
+@include tablet {
+    .header {
+      height: 65px;
+      left: 0;
+      -webkit-transition: left 0.3s ease-in;
+      -moz-transition: left 0.3s ease-in;
+      -o-transition: left 0.3s ease-in;
+      -ms-transition: left 0.3s ease-in;
+      transition: left 0.3s ease-in;
+    }
+
+    .header__logo {
+      width: 65px;
+      height: 100%;
+      font-size: 55px;
+    }
+
+    .header__mainTitle {
+        @include font($font-size-large, $font-weight-bold, $white);
+    }
+
+    .header__subTitle {
+        @include font($font-size-small, $font-weight-regular, $white);
+    }
+
+    .header__companyName {
+        margin-top: 15px;
+        vertical-align: middle;
+    }
+
+}
+
+/* Desktop-specific styles */
+@include desktop {
+
+}
