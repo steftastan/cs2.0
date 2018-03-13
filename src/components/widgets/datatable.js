@@ -87,7 +87,7 @@ export class DataTable extends Component {
         if (this.props.filters) {
             for (var i = 0; i < this.props.filters.length; i++) {
                 console.log(this.props.filters[key]);
-                this.filters.push(<a key={key} href={this.props.filters[i].params}>{this.props.filters[i].displayName}</a>);
+                this.filters.push(<a key={key} className="tag" href={this.props.filters[i].params}>{this.props.filters[i].displayName}</a>);
             }
 
             this.setState({
@@ -179,7 +179,9 @@ export class DataTable extends Component {
             var table = (
                 <div className="wrapper wrapper__content--whiteBox">
                     <h2 className={'dataTable__title'}>{title__text}</h2>
-                    {this.filters}
+                    <div className="tag__wrapper col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                        {this.filters}
+                    </div>
                     <BootstrapTable key={this.props.index} data={this.tableData} options={this.options} striped hover pagination tableHeaderClass={'dataTable__row--header'} trClassName={'dataTable__row--content'}>
                         {tableHeaders}
                     </BootstrapTable>

@@ -7,36 +7,39 @@
  */
 
  /* All devices */
+
+ .tag__wrapper {
+    margin: 5px 0 10px 0;
+ }
+
  .tag {
      display: inline-block;
      border-radius: 15px;
      padding: 8px;
      color: $white;
+     background-color: $blue-60;
      cursor: pointer;
+     -webkit-transition: all 0.2s ease-in;
+     -moz-transition: all 0.2s ease-in;
+     -o-transition: all 0.2s ease-in;
+     -ms-transition: all 0.2s ease-in;
+     transition: all 0.2s ease-in;
  }
 
  .tag + .tag {
      margin: 0 0 0 5px;
  }
 
- .tag--text {
-     margin: 0 5px 0 0;
- }
-
- .tag--inactive {
-     background-color: $cool-gray-40;
- }
-
- .tag--inactive:hover {
-     background-color: $cool-gray-20;
- }
-
  .tag--active {
-     background-color: $peach-40;
+     background-color: $blue-50;
+     color: $white;
+     text-decoration: none;
  }
 
- .tag--active:hover {
-     background-color: $peach-50;
+ .tag:hover {
+     background-color: $blue-50;
+     color: $white;
+     text-decoration: none;
  }
 
  /* Mobile-specific styles */
