@@ -88,7 +88,11 @@ export function HandleRegularLink(link) {
    * @param widget [Object] The widget's configuration as it appears in the options constant.
    * @param cb [Function] A call back function that allows us to return data within the scope of the asynchronous function.
    */
-export function GetWidget(key, widget, cb) {
+export function GetWidget(key, widget, filters, cb) {
+
+	var endPoint = (widget.endpoint ? widget.endpoint : '')+(filters ? filters : '');
+
+	console.log(endPoint);
 
 	 /* Polyfill because IE does not support Object.values function */
   	 const valuesPolyfill = function values (object) {
@@ -96,6 +100,10 @@ export function GetWidget(key, widget, cb) {
   	 };
 
   	 const values = Object.values || valuesPolyfill;
+
+	 if (widget.data && widget.data.length) {
+	
+	 }
 
   	 $.getJSON(widget.endpoint, function(data) {
   		 // Process data, some of it may be the value pertaining to a results property.

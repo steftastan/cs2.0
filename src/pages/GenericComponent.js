@@ -59,15 +59,19 @@ export class GenericComponent extends Component {
      componentDidUpdate(prevProps, prevState) {
        var data = {};
        var result = {};
+       var filters;
 
        /**
         * Begin the process of loading widgets after the component has finished mounting.
         */
+
+
        if (prevState.loaded !== this.state.loaded && this.props.options) {
 
-           for (var i = 0; i < this.props.options.widgets.length; i++) {
-               this.GetWidget(i, this.props.options.widgets[i], function(key, result, widget) {
+           filters = this.props.location.search ? this.props.location.search : '';
 
+           for (var i = 0; i < this.props.options.widgets.length; i++) {
+               this.GetWidget(i, this.props.options.widgets[i], filters, function(key, result, widget) {
 
                    if (result) {
                        /**
@@ -76,7 +80,7 @@ export class GenericComponent extends Component {
 
                         // if there are widgets of type data table
                         if (widget.name === 'dataTable') {
-                            this.widgets.push(<DataTable index={key} key={key} options={widget} results={result} language={this.props.language} />);
+                            this.widgets.push(<DataTable index={key} key={key} options={widget} results={result} filters={widget.filters || {}} language={this.props.language} />);
                         }
 
                         // if there are widgets of type graphic chart
@@ -122,7 +126,6 @@ export class GenericComponent extends Component {
 
     render() {
         var content = (this.state.widgets && this.state.widgets.length ? <div>{this.state.widgets}</div> : <div className="spinner"></div>);
-
         return (
             <div>
                 <BreadCrumbs breadcrumbs={this.props.page} language={this.props.language}>

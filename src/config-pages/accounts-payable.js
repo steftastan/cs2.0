@@ -5,6 +5,23 @@ global.AccountsPayable = {
     }, {
         name: 'dataTable',
         title: 'Accounts Payable',
+        filters: [{
+                id: 'chequesAll',
+                displayName: 'All Cheques',
+                params: 'cheques=cheques&balance=all&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+            }, {
+                id: 'chequesBalance',
+                displayName: 'Cheques Balance',
+                params: 'cheques=cheques&balance=balance&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+            }, {
+                name: 'purchaseAll',
+                displayName: 'All Purchases',
+                params: 'cheques=purchases&balance=all&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+            }, {
+                name: 'purchasesBalance',
+                displayName: 'Purchases Balance',
+                params: 'cheques=purchases&balance=balance&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+            }],
         endpoint: global.endpoints[global.env].ACCOUNTS_PAYABLE,
         bootStrapClass : 'col-12',
         customColumns: [{

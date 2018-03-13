@@ -21,6 +21,7 @@ export class DataTable extends Component {
       this.pagination = 'pagination';
       this.tableData = [];
       this.options = {};
+      this.filters = {};
       this.newPaginationClass = 'dataTable__pagination';
       this.state = {
           all: false
@@ -28,6 +29,13 @@ export class DataTable extends Component {
     }
 
     componentWillMount() {
+
+        if (this.options.data) {
+            /* TODO: Handle multiple endpoints */
+
+            /* TODO: Should be able to do the filtering on the client side, no need for multiple endpoints
+            just react router and params... maybe call getWidget again or make another function */
+        }
 
         this.tableData = this.props.results;
         this.options = {
@@ -72,6 +80,12 @@ export class DataTable extends Component {
                     this.setState({all:true});
                 }
             }
+        }
+
+        /* Build filter options*/
+        if (this.props.filters) {
+            console.log(this.props.filters);
+            this.filters = (<a href={this.props.filters.params}>{this.props.filters.displayName}</a>);
         }
     }
 
@@ -148,6 +162,7 @@ export class DataTable extends Component {
             title__text = this.Localization(this.props.options.title, this.props.language); // Translated version of the chart's title.
             var table = (
                 <div className="wrapper wrapper__content--whiteBox">
+                    {this.filters}
                     <h2 className={'dataTable__title'}>{title__text}</h2>
                     <BootstrapTable key={this.props.index} data={this.tableData} options={this.options} striped hover pagination tableHeaderClass={'dataTable__row--header'} trClassName={'dataTable__row--content'}>
                         {tableHeaders}
