@@ -8,19 +8,19 @@ global.AccountsPayable = {
         filters: [{
                 id: 'chequesAll',
                 displayName: 'All Cheques',
-                params: 'cheques=cheques&balance=all&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+                params: '?cheques=cheques&balance=all&year=2018&week=10'
             }, {
                 id: 'chequesBalance',
                 displayName: 'Cheques Balance',
-                params: 'cheques=cheques&balance=balance&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+                params: '?cheques=cheques&balance=balance&year=2018&week=10'
             }, {
                 name: 'purchaseAll',
                 displayName: 'All Purchases',
-                params: 'cheques=purchases&balance=all&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+                params: '?cheques=purchases&balance=all&year=2018&week=10'
             }, {
                 name: 'purchasesBalance',
                 displayName: 'Purchases Balance',
-                params: 'cheques=purchases&balance=balance&supl1=&year=2018&week=10&location=&currency=&type=&displayGraphe=false'
+                params: '?cheques=purchases&balance=balance&year=2018&week=10'
             }],
         endpoint: global.endpoints[global.env].ACCOUNTS_PAYABLE,
         bootStrapClass : 'col-12',

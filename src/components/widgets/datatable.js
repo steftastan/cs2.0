@@ -21,10 +21,11 @@ export class DataTable extends Component {
       this.pagination = 'pagination';
       this.tableData = [];
       this.options = {};
-      this.filters = {};
+      this.filters = [];
       this.newPaginationClass = 'dataTable__pagination';
       this.state = {
-          all: false
+          all: false,
+          filters: []
       };
     }
 
@@ -70,23 +71,32 @@ export class DataTable extends Component {
                     this.options[key] = this.props.options.options[key];
                 }
 
+                /* TODO over write tableData maybe in component will mount depending if there are filters up in the URL... so bring in all data Android
+                filter results over here */
+
                 /* Append "All" option as another default item in pagination count. */
                 if (key === 'sizePerPageList' && this.state.all === false) {
-
                     this.options.sizePerPageList[this.options.sizePerPageList.length] = {
                         text: this.Localization('all', this.props.language), value: this.tableData.length
                     };
-
-                    this.setState({all:true});
                 }
             }
         }
 
         /* Build filter options*/
         if (this.props.filters) {
-            console.log(this.props.filters);
-            this.filters = (<a href={this.props.filters.params}>{this.props.filters.displayName}</a>);
+            for (var i = 0; i < this.props.filters.length; i++) {
+                console.log(this.props.filters[key]);
+                this.filters.push(<a key={key} href={this.props.filters[i].params}>{this.props.filters[i].displayName}</a>);
+            }
+
+            this.setState({
+                all: true,
+                filters: this.filters
+            });
         }
+
+
     }
 
     componentDidMount() {
@@ -107,6 +117,10 @@ export class DataTable extends Component {
          }
     }
 
+    componentWillReceiveProps(nextProps) {
+
+    }
+
     render() {
         var dataColumns = [];
         var tableHeaders;
@@ -118,6 +132,8 @@ export class DataTable extends Component {
         var columnType;
         var columnWidth;
 
+
+        /* TODO: When to retrieve new changes I would have to over write the tableData info */
 
         if (this.tableData && this.tableData.length) {
 
@@ -162,8 +178,8 @@ export class DataTable extends Component {
             title__text = this.Localization(this.props.options.title, this.props.language); // Translated version of the chart's title.
             var table = (
                 <div className="wrapper wrapper__content--whiteBox">
-                    {this.filters}
                     <h2 className={'dataTable__title'}>{title__text}</h2>
+                    {this.filters}
                     <BootstrapTable key={this.props.index} data={this.tableData} options={this.options} striped hover pagination tableHeaderClass={'dataTable__row--header'} trClassName={'dataTable__row--content'}>
                         {tableHeaders}
                     </BootstrapTable>
